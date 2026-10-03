@@ -21,7 +21,4 @@ Hi there, I'm Mustafa! 👋<br><br>About Me<br><br>I graduated from the College 
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=mustafamazen199748-coder&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
----
-[![](https://komarev.com/ghpvc/?username=mustafamazen199748-coder&icon=0&color=0)](https://visitcount.itsvg.in)
-
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
