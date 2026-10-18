@@ -1,7 +1,7 @@
 Hi My name is Mustafa Mazen
 ==============================
 
-Network & Machine Learn Engineer
+Machine Learn Engineer
 --------------------------------
 
 I’m currently working on developing my Python and Data Science skills .
