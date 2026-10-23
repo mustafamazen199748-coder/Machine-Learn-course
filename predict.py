@@ -4,7 +4,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel, Field, ConfigDict
 import uvicorn
 
-# 1. مخطط بيانات العميل
 class Customer(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -34,7 +33,6 @@ class Customer(BaseModel):
     totalcharges: float = Field(..., ge=0.0)
 
 
-# 2. مخطط الاستجابة
 class PredictResponse(BaseModel):
     churn_probability: float
     churn: bool
@@ -42,15 +40,12 @@ class PredictResponse(BaseModel):
 
 app = FastAPI(title="Customer Churn Prediction API")
 
-# 3. تحميل dv و model كزوج منفصل من الملف
 with open('model.bin', 'rb') as f_in:
     dv, model = pickle.load(f_in)
 
 
 def predict_single(customer_data: dict) -> float:
-    # تحويل قاموس العميل لمصفوفة عبر DictVectorizer أولاً
     X = dv.transform([customer_data])
-    # حساب الاحتمالية عبر النموذج
     prob = model.predict_proba(X)[0, 1]
     return float(prob)
 

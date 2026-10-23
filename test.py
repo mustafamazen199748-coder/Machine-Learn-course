@@ -1,6 +1,5 @@
 import requests
 
-# الرابط السحابي المباشر لنقطة نهاية التنبؤ
 url = 'https://wild-moon-8845.fly.dev/predict'
 
 customer = {
