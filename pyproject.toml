@@ -1,0 +1,26 @@
+[project]
+name = "machine-learn-course"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mustafa Mazen", email = "mustafamazen199748@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.161.1",
+    "scikit-learn>=1.9.1",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+machine-learn-course = "machine_learn_course:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "requests>=2.34.2",
+]
