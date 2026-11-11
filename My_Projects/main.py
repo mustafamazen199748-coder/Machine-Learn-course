@@ -96,8 +96,8 @@ def predict_diabetes(patient: PatientInput):
         prediction=is_positive,
         risk_level="HIGH RISK" if is_positive else "LOW RISK",
         recommendation=(
-            "إحالة عاجلة للفحص السريري والمختبري التأكيدي."
+            "Urgent referral for clinical examination"
             if is_positive
-            else "المؤشرات الحالية آمنة، يُنصح بإعادة المسح سنوياً."
+            else "Current indicators are safe."
         ),
     )
