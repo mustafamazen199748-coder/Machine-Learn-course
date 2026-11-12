@@ -1,3 +1,16 @@
+# Reasons for deciding in favor of XGBoost
+
+# Superiority in the primary clinical criterion (F_2 Score = 0.9033):
+# In medical screening projects, model evaluation is based on the F_2 metric because it tips the balance toward recall (detection sensitivity) without sacrificing precision. XGBoost's superiority here gives you a strong scientific argument before evaluation committees and project reviewers.
+
+# Limiting costs and false alarms (Precision = 0.8583):
+# Although Random Forest achieved a slightly higher detection sensitivity in Recall (0.9391 vs. 0.9240), its precision was relatively low (approx 81.2). Adopting XGBoost prevents directing thousands of healthy individuals to unnecessary venous tests and laboratory biopsies.
+
+# Highest discriminative separation capability (AUC = 0.9477):
+# The most stable model when lowering the operational decision threshold to t = 0.20.
+
+
+
 import pickle
 import numpy as np
 import pandas as pd
