@@ -26,21 +26,3 @@ Features included: Demographics (age, gender), Lifestyle (diet score, physical a
 `pyproject.toml` & `uv.lock`: Dependency definitions managed via Astral uv.
 
 ' Dockerfile`: Multi-stage, lean Docker container configuration for containerized deployment.
-
-## Running the Service with Docker
-
-1. **Build the Docker image:**
-   ```bash
-   docker build -t diascreen-api .
-   ```
-
-2. **Run the container:**
-   ```bash
-   docker run -d -p 8000:8000 --name diascreen_service diascreen-api
-   ```
-
-## Deployment & Service Interaction
-
-The FastAPI service was containerized and verified via Swagger UI (`/docs`) and REST API requests:
-
-![DiaScreen AI Deployment Demo](images/deployment_demo.png)
